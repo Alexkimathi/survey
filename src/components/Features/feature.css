@@ -13,13 +13,13 @@
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-
 }
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
 }
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4); }
+  width: calc((100% - 3 * 6rem) / 4);
+}
 /*  */
 
 .section-features {
@@ -56,32 +56,27 @@
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
-
-  .u-margin-top-huge {
-    margin-bottom: 10rem; }
-
-
-    
-/*media query tablet */
-@media screen and (max-width: 1024px) {
- 
+  margin-bottom: 1.5rem;
 }
 
-/*media query phones */
-@media screen and (max-width: 600px) {
+.u-margin-top-huge {
+  margin-bottom: 10rem;
+}
+
+/*media query tablet */
+@media screen and (max-width: 1024px) {
+
   .row .col-1-of-4 {
     width: calc((100% - 1 * 6rem) / 1);
     padding-left: 3.5rem;
-   }
+  }
 
-   .feature-box {
+  .feature-box {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
     padding: 1rem;
     margin: 1rem;
     align-items: center;
-
   }
   .section-features {
     padding: 10rem 1rem;
@@ -96,17 +91,51 @@
     transform: skewY(-7deg);
   }
 
-  
-.heading-secondary-1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 3rem;
-}
-.heading-secondary-1:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 1rem rgba(72, 50, 50, 0.2);
+  .heading-secondary-1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3rem;
+  }
+  .heading-secondary-1:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 1rem rgba(72, 50, 50, 0.2);
+  }
 }
 
-  
+/*media query phones */
+@media screen and (max-width: 600px) {
+  .row .col-1-of-4 {
+    width: calc((100% - 1 * 6rem) / 1);
+    padding-left: 3.5rem;
+  }
 
+  .feature-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+  }
+  .section-features {
+    padding: 10rem 1rem;
+    margin-top: -10rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.5),
+        rgba(40, 180, 133, 0.5)
+      ),
+      url(../../img/s1.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+  }
+
+  .heading-secondary-1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3rem;
+  }
+  .heading-secondary-1:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 1rem rgba(72, 50, 50, 0.2);
+  }
 }
