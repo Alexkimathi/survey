@@ -1,5 +1,9 @@
 import React from "react";
 import "./feature.css";
+import {RiMapPinFill} from 'react-icons/ri';
+import {RiMap2Fill} from 'react-icons/ri';
+import {SiGooglemaps} from 'react-icons/si';
+import {FaFileSignature} from 'react-icons/fa'
 
 function Features() {
   return (
@@ -9,9 +13,9 @@ function Features() {
       <div class="row">
         <div class="col-1-of-4">
           <div class="feature-box">
-            <i class="feature-box__icon icon-basic-world"></i>
+            <i class="feature-box__icon"> <RiMapPinFill /> </i>
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Explore the world
+              Boundary Survey
             </h3>
             <p class="feature-box-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -24,8 +28,8 @@ function Features() {
 
         <div class="col-1-of-4">
           <div class="feature-box">
-            <i class="feature-box__icon icon-basic-compass"></i>
-            <h3 class="heading-tertiary u-margin-bottom-small">Meet Nature</h3>
+            <i class="feature-box__icon"><RiMap2Fill /> </i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Construction survey</h3>
             <p class="feature-box-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
               nisi officiis accusantium temporibus corporis molestias dolore
@@ -37,9 +41,9 @@ function Features() {
 
         <div class="col-1-of-4">
           <div class="feature-box">
-            <i class="feature-box__icon icon-basic-map"></i>
+            <i class="feature-box__icon icon-basic-map"><FaFileSignature /></i>
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Find Your Way
+              Permmiting
             </h3>
             <p class="feature-box-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -52,9 +56,9 @@ function Features() {
 
         <div class="col-1-of-4">
           <div class="feature-box">
-            <i class="feature-box__icon icon-basic-heart"></i>
+            <i class="feature-box__icon"><SiGooglemaps /></i>
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Live A Healthier Life
+              Mapping
             </h3>
             <p class="feature-box-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore

@@ -13,7 +13,7 @@
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  color: transparent;
+
 }
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
@@ -186,4 +186,10 @@
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(72, 50, 50, 0.2);
 }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+  .u-margin-top-huge {
+    margin-bottom: 10rem; }
 
