@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 3rem;
+}
+
+
+.header__logo-box {
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  top: 4rem;
+  left: 4rem;
+}
+.items {
+  margin-left: 35rem;
+  font-size: 0.5rem;
+}
+
+.header__logo {
+  margin-right: 2rem;
+  height: 7rem;
+  border-radius: 1rem;
+  background-color: transparent;
+}
