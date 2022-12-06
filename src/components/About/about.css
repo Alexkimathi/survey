@@ -134,6 +134,42 @@
 
 /*media query tablet */
 @media screen and (max-width: 1024px) {
+  .section-about {
+    padding: 2rem;
+    font-size: 1rem;
+    padding-bottom: 10rem;
+    margin-top: -10vh;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 1);
+  }
+
+  .paragraph {
+    font-size: 1.3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .paragraph:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .composition {
+    display: none;
+  }
+
+  .btn-text:link,
+  .btn-text:visited {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    margin-bottom: 5rem;
+  }
 }
 
 /*media query phones */

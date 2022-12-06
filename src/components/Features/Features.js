@@ -29,7 +29,9 @@ function Features() {
         <div class="col-1-of-4">
           <div class="feature-box">
             <i class="feature-box__icon"><RiMap2Fill /> </i>
-            <h3 class="heading-tertiary u-margin-bottom-small">Construction survey</h3>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Construction Survey
+            </h3>
             <p class="feature-box-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
               nisi officiis accusantium temporibus corporis molestias dolore
