@@ -212,6 +212,7 @@
 
   .header {
     height: 80vh;
+    width: 31.5rem;
     background-image: linear-gradient(
         to right bottom,
         rgba(126, 213, 111, 0.2),

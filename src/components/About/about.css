@@ -134,7 +134,7 @@
 
 /*media query tablet */
 @media screen and (max-width: 1024px) {
-  .section-about {
+  /* .section-about {
     padding: 2rem;
     font-size: 1rem;
     padding-bottom: 10rem;
@@ -169,7 +169,7 @@
     font-size: 1.3rem;
     padding: 0.4rem;
     margin-bottom: 5rem;
-  }
+  } */
 }
 
 /*media query phones */
@@ -193,7 +193,7 @@
 
   .paragraph {
     font-size: 1.3rem;
-    width: 100%;
+    width: 90%;
     margin-bottom: 3rem;
   }
   .paragraph:not(:last-child) {
