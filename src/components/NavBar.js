@@ -12,7 +12,7 @@ function Navbar() {
           <img src={image1} alt="food-1" className="header__logo" />
           <div>
             <h1>
-              POINT <span className="span-1">MAP</span> SOLUTIONS
+              POINT<span className="span-1">MAP</span>SOLUTIONS
             </h1>
             <p>LandSurveying & Digital Mapping</p>
           </div>
