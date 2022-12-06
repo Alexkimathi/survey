@@ -189,12 +189,14 @@
 
   .row .col-1-of-2 {
     width: calc((100% - 2rem) / 1);
+    padding: 2rem;
   }
 
   .paragraph {
     font-size: 1.3rem;
-    width: 90%;
+    width: 100%;
     margin-bottom: 3rem;
+   
   }
   .paragraph:not(:last-child) {
     margin-bottom: 1rem;

@@ -33,8 +33,7 @@
     url(../../img/s1.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  width:29rem;
-  padding: 2rem;
+  
 }
 .section-features > * {
   transform: skewY(7deg);
