@@ -210,6 +210,21 @@
     font-size: 1rem;
   }
 
+  .header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.2),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(../../img/person.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+  }
+
 
 
  
