@@ -7,7 +7,7 @@ import { MdAttachEmail } from "react-icons/md";
 import { AiFillClockCircle } from "react-icons/ai";
 import { IoLocation } from "react-icons/io5";
 
-function Footer() {
+function footer() {
   return (
     <div>
       <div className="footer">
@@ -78,4 +78,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default footer;
