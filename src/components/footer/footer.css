@@ -1,0 +1,134 @@
+.footer {
+  /* padding: 2rem; */
+  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.logo {
+  display: flex;
+}
+.logo__text {
+  width: 15vw;
+  list-style: none;
+}
+.line {
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+.left__side {
+  width: 20vw;
+  margin: 5rem 5rem 0;
+  /* background-color: red; */
+}
+.footer__logo {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  height: 14vh;
+  border-radius: 1rem;
+}
+
+.header__socials {
+  margin: 3rem;
+  display: flex;
+  font-size: 2rem;
+  gap: 1rem;
+}
+.header__socials a {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: var(--color-light);
+  color: var(--color-black);
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-3);
+}
+
+.header__socials a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateX(-0.5rem);
+}
+.footer__socials {
+  margin-right: 10rem;
+  display: grid;
+  width: 18vw;
+}
+.footer__socials a {
+  margin: 1rem;
+  /* font-size: 2rem; */
+}
+.footer__socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateX(-0.5rem);
+  }
+.footer__socials span {
+  margin: 1rem;
+}
+.footer__links {
+  text-decoration: none;
+  margin: 2rem;
+  width: 20vw;
+}
+
+
+
+
+/*media query tablet */
+@media screen and (max-width: 1024px) {
+
+
+  }
+  
+  /*media query phones */
+  @media screen and (max-width: 600px) {
+    .footer {
+       margin: 0;
+       padding: 0;
+        display: grid;
+     
+      }
+      .logo {
+        font-size: 1.5rem;
+        width: 100%;
+    
+      }
+      .left__side {
+        margin-top: 2rem;
+       
+      }
+      .header__socials {
+        margin: 2rem;
+        display: flex;
+        font-size: 4rem;
+        color: blue;
+        width: 100%;
+      }
+      .footer__links {
+        width: 100%;
+        margin-left: 5rem;
+      }
+      .footer__socials {
+       
+        width: 90%;
+        margin: 2rem;
+      }
+      .footer__logo{
+        width: 100%;
+
+     
+
+      }
+   
+    
+    
+ 
+  }
+  

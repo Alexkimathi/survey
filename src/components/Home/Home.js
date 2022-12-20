@@ -5,6 +5,7 @@ import About from "../About/About";
 import Navbar from "../NavBar";
 import Features from "./../Features/Features";
 import Reviews from "./../Review/Reviews";
+import Footer from "./../footer/Footer"
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
 
       <Features />
       <Reviews />
+      <Footer />
     </div>
   );
 }
