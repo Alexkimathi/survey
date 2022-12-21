@@ -1,0 +1,134 @@
+.container{
+    width: 50%;
+    align-items: center;
+    
+    
+}
+.mb-2{
+    font-size: 3rem;
+    margin-left: 20rem;
+   
+}
+form{
+    width: 100%;
+   
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+     background-color: black;
+    color: white;
+    font-size: 2rem;
+     padding-bottom: 20rem;
+     padding-top:2rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+    /* margin: 2rem;  */
+
+
+
+}
+.dets{
+    width: 100%;
+    margin-left: 10rem;
+    margin-top: 3rem;
+
+}
+
+.footer__socialss {
+    margin-right: 1rem;
+    display: grid;
+    margin-top: 5rem;
+
+  }
+  .footer__socialss a {
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+  .footer__socialss a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateX(-0.5rem);
+  }
+  .footer__socialss span {
+    margin: 1rem;
+  }
+
+
+  
+/*media query tablet */
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        display: grid;
+      }
+}
+
+/*media query phones */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+
+  .contact{
+    display: grid;
+    width: 100%;
+    /* justify-content: space-between;
+     background-color: black;
+    color: white;
+    font-size: 2rem;
+     padding-bottom: 20rem;
+     padding-top:2rem;
+     padding-left: 2rem;
+     padding-right: 2rem; */
+    /* margin: 2rem;  */
+
+
+
+}
+.mb-2{
+    font-size: 2rem;
+    margin: 5rem;
+   
+}
+
+.dets{
+    width: 70%;
+    margin-left: .1rem;
+    margin-top: .1rem;
+  
+
+}
+form{
+    width: 90%;
+  
+}
+  /* .logo {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .left__side {
+    margin-top: 2rem;
+  }
+  .header__socials {
+    margin: 2rem;
+    display: flex;
+    font-size: 3rem;
+    color: blue;
+    width: 100%;
+  }
+  .footer__links {
+    width: 100%;
+    margin-left: 5rem;
+  }
+  .footer__socials {
+    width: 90%;
+    margin: 2rem;
+  }
+  .footer__logo {
+    width: 100%;
+  } */
+}

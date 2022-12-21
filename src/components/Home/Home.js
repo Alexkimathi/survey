@@ -6,6 +6,8 @@ import Navbar from "../NavBar";
 import Features from "./../Features/Features";
 import Reviews from "./../Review/Reviews";
 import Links from './../footer/Links';
+import Contact from "../Contact/Contact";
+
 
 function Home() {
   return (
@@ -28,6 +30,8 @@ function Home() {
 
       <Features />
       <Reviews />
+      <Contact />
+
       <Links />
     </div>
   );

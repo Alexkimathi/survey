@@ -36,10 +36,10 @@ function Links() {
             <div>
               <div className="footer__socials">
                 <a>
-                  <AiFillPhone /> <span>0708353465</span>{" "}
+                  <AiFillPhone /> <span>0712345678</span>
                 </a>
                 <a>
-                  <MdAttachEmail /> <span>0708353465</span>{" "}
+                  <MdAttachEmail /> <span>piontmap@gmail.com</span>
                 </a>
                 <a>
                   <AiFillClockCircle />{" "}
