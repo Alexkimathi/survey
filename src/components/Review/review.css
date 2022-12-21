@@ -9,6 +9,7 @@
   transform: skewX(-12deg);
 }
 .story__shape {
+  margin-left: 5rem;
   width: 15rem;
   height: 15rem;
   float: left;
@@ -51,7 +52,7 @@
 }
 
 .section-stories {
-  padding-top: 20rem;
+  padding: rem;
   background-color: white;
 }
 
@@ -59,7 +60,7 @@
 
 /*media query tablet */
 @media screen and (max-width: 1024px) {
-/*   
+  
   .section-stories {
     padding-top: 10rem;
   }
@@ -92,7 +93,7 @@
   }
   .story__text {
     transform: skewX(1deg);
-    padding-top: 15rem;
+    padding: 5rem;
     font-size: 1.5rem;
   }
   .story__caption {
@@ -107,7 +108,7 @@
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden;
-  } */
+  }
  
 }
 
