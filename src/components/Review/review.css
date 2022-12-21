@@ -1,5 +1,5 @@
 .story {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -52,17 +52,15 @@
 }
 
 .section-stories {
-  padding: 10rem;
-  margin: 10rem;
+  padding: 20rem;
   background-color: white;
 }
 
 
 
-
 /*media query tablet */
 @media screen and (max-width: 1024px) {
-  
+/*   
   .section-stories {
     padding-top: 10rem;
   }
@@ -95,7 +93,7 @@
   }
   .story__text {
     transform: skewX(1deg);
-    padding: 5rem;
+    padding-top: 15rem;
     font-size: 1.5rem;
   }
   .story__caption {
@@ -110,7 +108,7 @@
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden;
-  }
+  } */
  
 }
 
@@ -118,7 +116,7 @@
 @media screen and (max-width: 600px) {
 
   .section-stories {
-    padding-top: 10rem;
+    padding: 3rem;
   }
 
   .story {
