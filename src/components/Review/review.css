@@ -4,7 +4,7 @@
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 0.3rem;
-  padding: 6rem;
+  padding: 4rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
 }
@@ -52,7 +52,10 @@
 }
 
 .section-stories {
-  padding: 10rem;
+  /* padding: 10rem; */
+  padding-left: 10rem;
+  padding-top: 10rem;
+  padding-right: 10rem;
   background-color: white;
 }
 
@@ -60,7 +63,7 @@
 
 /*media query tablet */
 @media screen and (max-width: 1024px) {
-/*   
+  
   .section-stories {
     padding-top: 10rem;
   }
@@ -108,7 +111,7 @@
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden;
-  } */
+  }
  
 }
 

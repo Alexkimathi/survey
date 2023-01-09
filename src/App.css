@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
 }
 
 html {
@@ -57,19 +57,25 @@ body {
   .header__logo-box{
     font-size: 1.3rem;
   }
+  .items {
+    margin: 0;
+    
+  }
 }
 
 
 /*media query phones */
 @media screen and (max-width: 600px) {
-
-  .heading-primary {
-    width: 100%;
-    
-  }
+  
   body {
+    width: 100%;
+    margin: 0;
+  
     padding: 0;
-    /* width: 50%; */
+   
   }
-
+  .items {
+    display: none;
+  }
+ 
 }
