@@ -1,54 +1,63 @@
 import React from "react";
 import "./about.css";
+import { Link } from "react-router-dom";
 import pic2 from "../../img/s1.jpg";
 import pic3 from "../../img/s4.jpg";
 import pic4 from "../../img/s5.jpg";
 
 function About() {
   return (
-    <section className="section-about">
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">About-Us</h2>
-      </div>
+    <section id="about" className="about">
+      <div className="container">
+        <div className="about__grid">
+          <div className="about__content fade-in">
+            <span className="section-label">Who We Are</span>
+            <h2 className="section-title">
+              Precision Surveying<br />You Can Trust
+            </h2>
 
-      <div className="row">
-        <div className="col-1-of-2">
-          <h3 className="heading-tertiary u-margin-bottom-small">VISION</h3>
-          <p className="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, enim
-            distinctio! Dolore, culpa. Aspernatur soluta enim laboriosam, magnam
-            est ad, sint vero officiis dolore, veniam tempora quos vitae eius
-            eos?
-          </p>
+            <div className="about__block fade-in fade-in-delay-1">
+              <div className="about__block-icon">🎯</div>
+              <div>
+                <h3 className="about__block-title">Our Vision</h3>
+                <p className="about__block-text">
+                  To be the leading land surveying and digital mapping firm in East Africa,
+                  delivering precise, reliable, and technologically advanced solutions to
+                  clients across all sectors.
+                </p>
+              </div>
+            </div>
 
-          <h3 className="heading-tertiary u-margin-bottom-small">MISSION</h3>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            natus vel minima cum sunt fugit quibusdam libero iste dignissimos
-            reiciendis harum vitae,placeat dolore debitis accusamus recusandae
-            quisquam molestiae numquam!
-          </p>
-          <a href="/" className="btn-text">
-            Learn more &rarr;
-          </a>
-        </div>
-        <div className="col-1-of-2">
-          <div className="composition">
-            <img
-              src={pic2}
-              alt="p-1"
-              className="composition__photo composition__photo--p1"
-            />
-            <img
-              src={pic3}
-              alt="p-2"
-              className="composition__photo composition__photo--p2"
-            />
-            <img
-              src={pic4}
-              alt="p-3"
-              className="composition__photo composition__photo--p3"
-            />
+            <div className="about__block fade-in fade-in-delay-2">
+              <div className="about__block-icon">🚀</div>
+              <div>
+                <h3 className="about__block-title">Our Mission</h3>
+                <p className="about__block-text">
+                  To provide accurate and timely surveying services using cutting-edge
+                  technology, enabling our clients to make informed decisions about
+                  their land and property investments.
+                </p>
+              </div>
+            </div>
+
+            <Link
+              to="/services"
+              className="about__cta fade-in fade-in-delay-3"
+            >
+              Our Services →
+            </Link>
+          </div>
+
+          <div className="about__images fade-in fade-in-delay-1">
+            <div className="about__img-grid">
+              <img src={pic2} alt="Land surveying work" className="about__img about__img--tall" />
+              <img src={pic3} alt="Digital mapping" className="about__img" />
+              <img src={pic4} alt="Survey team" className="about__img" />
+              <div className="about__badge">
+                <span className="about__badge-num">15+</span>
+                <span className="about__badge-text">Years of Excellence</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

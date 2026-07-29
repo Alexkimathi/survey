@@ -1,0 +1,183 @@
+/* ===== SERVICE CARDS ===== */
+.services-page__cards {
+  background: var(--color-bg-2);
+}
+
+.services-page__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.service-detail-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 36px 32px;
+  transition: var(--transition);
+}
+
+.service-detail-card:hover {
+  border-color: rgba(34, 197, 94, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.service-detail-card__icon {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+  display: flex;
+}
+
+.service-detail-card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+
+.service-detail-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.service-detail-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-detail-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.service-detail-card__check {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== PROCESS ===== */
+.services-page__process {
+  background: var(--color-bg);
+}
+
+.services-page__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.process-step {
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.process-step__number {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.1);
+  border: 2px solid rgba(34, 197, 94, 0.4);
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.process-step__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.process-step__text {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.process-step__connector {
+  display: none;
+}
+
+/* ===== CTA BANNER ===== */
+.services-page__cta {
+  background: var(--color-bg-2);
+}
+
+.services-cta-banner {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(16, 185, 129, 0.07));
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: var(--border-radius-lg);
+  padding: 56px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.services-cta-banner__title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.services-cta-banner__sub {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.services-cta-banner__btn {
+  background: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: var(--border-radius-full);
+  white-space: nowrap;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.services-cta-banner__btn:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(34, 197, 94, 0.45);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .services-page__steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page__grid {
+    grid-template-columns: 1fr;
+  }
+  .services-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 28px;
+  }
+  .services-page__steps {
+    grid-template-columns: 1fr;
+  }
+}
