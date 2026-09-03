@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./faq.css";
 import { RiAddLine, RiSubtractLine } from "react-icons/ri";
 
@@ -32,11 +32,36 @@ const faqs = [
 
 function FAQ() {
   const [open, setOpen] = useState(null);
+  const [visible, setVisible] = useState(new Set());
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const key = entry.target.dataset.key;
+            setVisible((prev) => new Set([...prev, key]));
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    const els = sectionRef.current?.querySelectorAll("[data-key]");
+    els?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section id="faq" className="faq">
+    <section id="faq" className="faq" ref={sectionRef}>
       <div className="container">
-        <div className="text-center fade-in" style={{ marginBottom: "60px" }}>
+        <div
+          data-key="header"
+          className={`text-center fade-in${visible.has("header") ? " visible" : ""}`}
+          style={{ marginBottom: "60px" }}
+        >
           <span className="section-label">FAQ</span>
           <h2 className="section-title">Frequently Asked Questions</h2>
           <p className="section-subtitle" style={{ margin: "0 auto" }}>
@@ -49,7 +74,8 @@ function FAQ() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className={`faq__item fade-in${open === i ? " faq__item--open" : ""}`}
+              data-key={`faq-${i}`}
+              className={`faq__item fade-in${visible.has(`faq-${i}`) ? " visible" : ""}${open === i ? " faq__item--open" : ""}`}
               style={{ transitionDelay: `${i * 0.07}s` }}
             >
               <button
