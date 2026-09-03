@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Outfit:wght@300;400;500;600&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +11,10 @@
   --color-primary-light: #22c55e;
   --color-primary-dark: #15803d;
   --color-accent: #059669;
+
+  --color-dark: #071910;
+  --color-dark-2: #0d2118;
+  --color-dark-3: #142b1e;
 
   --color-bg: #f8fafc;
   --color-bg-2: #f1f5f9;
@@ -22,7 +28,8 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-family: 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
 
   --container-width: 1200px;
 
@@ -55,6 +62,12 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -63,11 +76,6 @@ body {
 
 section {
   padding: 100px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: 700;
 }
 
 img {
@@ -92,13 +100,30 @@ button {
 
 /* ---- Shared typography ---- */
 .section-label {
-  display: inline-block;
-  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 163, 74, 0.08);
+  border: 1px solid rgba(22, 163, 74, 0.22);
+  color: var(--color-primary-dark);
+  padding: 5px 14px 5px 10px;
+  border-radius: var(--border-radius-full);
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-primary);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+}
+
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  flex-shrink: 0;
 }
 
 .section-title {
@@ -106,7 +131,9 @@ button {
   font-weight: 800;
   color: var(--color-text);
   margin-bottom: 16px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  font-family: var(--font-display);
 }
 
 .section-subtitle {

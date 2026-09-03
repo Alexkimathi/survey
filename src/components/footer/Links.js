@@ -51,6 +51,17 @@ function Links() {
             </ul>
           </div>
 
+          {/* Services */}
+          <div className="footer__col">
+            <h4 className="footer__col-title">Our Services</h4>
+            <ul className="footer__links">
+              <li><Link to="/services">Boundary Survey</Link></li>
+              <li><Link to="/services">Construction Survey</Link></li>
+              <li><Link to="/services">Permitting</Link></li>
+              <li><Link to="/services">Digital Mapping</Link></li>
+            </ul>
+          </div>
+
           {/* Contact */}
           <div className="footer__col">
             <h4 className="footer__col-title">Contact</h4>
